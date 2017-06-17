@@ -5,6 +5,14 @@
     android:layout_height="match_parent"
     tools:context="meetum.sarawut.mysiam.MainActivity">
 
+    <!--BG-->
+    <ImageView
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_siam"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--Title-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,7 +30,10 @@
 
     </LinearLayout>
 
+    <!--Login-->
     <LinearLayout
+        android:padding="@dimen/padding"
+        android:background="#82282728"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
@@ -30,18 +41,66 @@
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
+        <!--Image Logo-->
         <ImageView
             android:layout_width="@dimen/icon"
             android:layout_height="@dimen/icon"
             android:src="@drawable/logo" />
 
+        <!--User-->
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"></LinearLayout>
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--Image User-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_user" />
+
+            <!--TextBox User-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/user"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimaryLight" />
+
+        </LinearLayout>
+
+        <!--Password-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--Image Password-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_lock" />
+
+            <!--TextBox Password-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimaryLight" />
+
+        </LinearLayout>
+
+        <!--New Register-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_register"
+            android:textColor="@color/colorPrimaryDark" />
 
     </LinearLayout>
 
+    <!--Login Button-->
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

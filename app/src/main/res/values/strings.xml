@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">My Siam</string>
-    <string name="title">มายไวฟุ</string>
+    <string name="title">My Application</string>
     <string name="login">Login</string>
+    <string name="user">User</string>
+    <string name="password">Password</string>
+    <string name="new_register">New Register</string>
 
 </resources>
